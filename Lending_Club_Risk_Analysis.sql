@@ -81,7 +81,7 @@ FROM loans
 GROUP BY purpose
 ORDER BY default_rate DESC;*/
 
-/*STEP 8 — CASE WHEN Analysis
+/*STEP 8 â€” CASE WHEN Analysis
 SELECT
     CASE
         WHEN annual_inc < 50000 THEN 'Low Income'
@@ -101,7 +101,7 @@ GROUP BY
         WHEN annual_inc < 100000 THEN 'Medium Income'
         ELSE 'High Income'
     END;*/
-/*STEP 9 — Window Functions
+/*STEP 9 â€” Window Functions
 Rank Loans
 SELECT loan_amnt,
        annual_inc,
@@ -118,7 +118,7 @@ SELECT grade,
 
 FROM loans;*/
 
-/*STEP 10 — Create Views (Looks Professional)
+/*STEP 10 â€” Create Views (Looks Professional)
 CREATE VIEW risk_analysis AS
 
 SELECT grade,
